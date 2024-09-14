@@ -1,0 +1,175 @@
+* {
+  border: 0;
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.outerDiv {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #60a5fa, #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.outerDiv .innerDiv {
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 28rem;
+  width: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.outerDiv .innerDiv input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 5px 25px;
+  height: 35px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.outerDiv .innerDiv .innerDiv1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.outerDiv .innerDiv .innerDiv1 div h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.outerDiv .innerDiv .innerDiv1 div p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.outerDiv .innerDiv button {
+  color: #ffffff;
+  background: #a855f7;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.outerDiv .innerDiv button:hover {
+  opacity: 1;
+}
+
+.outerDiv .innerDiv .innerDiv2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.outerDiv .innerDiv .innerDiv2 {
+  color: #ffffff;
+}
+
+.outerDiv .innerDiv .innerDiv2 .span1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.outerDiv .innerDiv .innerDiv2 .span2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.outerDiv .innerDiv .innerDiv2 .content {
+  color: #ffffff;
+  text-align: right;
+}
+
+.outerDiv .innerDiv .innerDiv2 .content img {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+}
+
+.outerDiv .innerDiv .innerDiv2 .content p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.outerDiv .innerDiv .innerDiv3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.outerDiv .innerDiv .innerDiv3 div {
+  text-align: center;
+}
+
+.outerDiv .innerDiv .innerDiv3 div i {
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+.outerDiv .innerDiv .innerDiv3 div .p1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  opacity: 0.7;
+}
+
+.outerDiv .innerDiv .innerDiv3 div .p2 {
+  font-weight: 700;
+}
+
+.outerDiv .innerDiv .innerDiv3 .div2 {
+  text-align: center;
+}
+
+.outerDiv .innerDiv .innerDiv3 .div2 i {
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* @media (min-width: 320px) and (max-width: 425px) {
+  .outerDiv .innerDiv {
+    width: 80%;
+  }
+} */
+
+@media (min-width: 640px) {
+  .outerDiv .innerDiv .innerDiv1 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .outerDiv .innerDiv .innerDiv1 div h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
